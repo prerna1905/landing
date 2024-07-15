@@ -1,0 +1,31 @@
+.card_container {
+    width: 26%;
+    height: auto;
+    background-color: #f3f8fa;
+    margin: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card_container:hover {
+    transform: translateY(-10px);
+    transform: scale(1.05);
+  }
+  
+  .card_heading {
+    font-size: 18px;
+    line-height: 26px;
+    color: #000;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card_para {
+    color: #000;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
