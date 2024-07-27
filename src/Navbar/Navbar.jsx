@@ -1,36 +1,61 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import './Navbar.css'
+import React, { useState, useEffect } from "react";
+import "./Navbar.css";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = React.useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen)
-  }
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <nav className={`navbar ${isOpen ? 'active' : ''}`}>
-      <NavLink to="/" className={'navHead'}>Prerna</NavLink>
+    <nav
+      className={`navbar ${isScrolled ? "scrolled" : ""} ${
+        isOpen ? "active" : ""
+      }`}
+    >
+      <a href="#home" className={"navHead"}>
+        Prerna
+      </a>
 
-      <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
+      <ul className={`nav-links ${isOpen ? "active" : ""}`}>
         <li>
-          <NavLink to="/">Home</NavLink>
+          <a href="#home">Home</a>
         </li>
         <li>
-          <NavLink to="/services">Services</NavLink>
+          <a href="#services">Services</a>
         </li>
         <li>
-          <NavLink to="/clients">Clients</NavLink>
+          <a href="#clients">Clients</a>
         </li>
         <li>
-          <NavLink to="/pricing">Pricing</NavLink>
+          <a href="#pricing">Pricing</a>
         </li>
         <li>
-          <NavLink to="/contact">Contact</NavLink>
+          <a href="#contact">Contact</a>
         </li>
         <li>
-          <NavLink to="/signup" className={'signUp_class'}>Sign Up</NavLink>
+          <a href="#home" className={"signUp_class"}>
+            Sign Up
+          </a>
         </li>
       </ul>
 
@@ -38,7 +63,7 @@ const Navbar = () => {
         <i className="fas fa-bars"></i>
       </button>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

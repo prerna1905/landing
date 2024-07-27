@@ -1,0 +1,91 @@
+.section_sixth {
+    background-color: #f3f8fa;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+  }
+  
+  .container_sixth {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .sixth_head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .sixth_text {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 1.6rem;
+  }
+  
+.sixth_para {
+    color: #7b798a;
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 670px;
+}
+form {
+    margin-top: 5rem;
+    max-width: 100%;
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+.form_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+.input_boxContainer{
+    padding: 13px;
+    border: 1px solid #eef1f2;
+    background-color: #fff;
+    font-size: 14px;
+    margin-top: 0.7rem;
+}
+  
+label {
+    font-size: 14px;
+    color: #282828
+}
+.message_box{
+    width: 99%;
+    margin-top: 1.8rem;
+
+}
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  .sendMessage_text {
+    background-color: #f55753;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: 1px solid #6c757d;
+  }
+  

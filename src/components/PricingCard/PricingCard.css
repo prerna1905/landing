@@ -1,0 +1,76 @@
+.card_containerSix {
+    width: 31%;
+    height: auto;
+    margin: 10px;
+    border: 2px solid #f7f7f9;
+  }
+.card_headingSix {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: #000;
+    margin-bottom: 0.76rem;
+    margin-top: 2.7rem;
+    text-align: center;
+  }
+  
+  .card_paraSix {
+    color: #7b798a;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+  }
+.dollar_container{
+    background-color: #f3f8fa;
+    text-align: center;
+    padding: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3.8rem;
+}
+.dollar_text{
+    color: #282828;
+    font-size: 20px;
+    display: inline-block;
+    -webkit-transform: translateY(-15px) translateX(5px);
+    transform: translateY(-15px) translateX(5px);
+    margin-right: 0.8rem;
+}
+.pricing_text{
+    color: #f55753;
+    font-size: 40px;
+}
+.plan_text{
+    font-size: 13px;
+    color: #282828;
+    font-weight: 400;
+    margin-left: 0.8rem;
+}
+.band_text{
+    margin-left: 45px;
+    margin-right: 45px;
+    align-self: center;
+    align-items: center;
+    display: flex;
+    margin-top: 1rem;
+}
+.width_text{
+    font-size: 14px;
+    line-height: 1.8;
+    margin-left: 1.4rem;
+    color: #282828!important;
+}
+.now_button{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.now_text{
+    color: #fff;
+    background-color: #f55753;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}

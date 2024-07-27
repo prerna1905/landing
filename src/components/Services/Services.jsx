@@ -3,9 +3,9 @@ import "./Services.css";
 import Card from "../Card/Card";
 import { MdOutlineMonitor } from "react-icons/md";
 
-const Services = () => {
+const Services = ({ id }) => {
   return (
-    <section className="section_fourth">
+    <section className="section_fourth" id={id}>
       <div className="container_fourth">
         <div className="center_text">
           <h3 className="key_text">Key features of the product</h3>

@@ -1,0 +1,34 @@
+.section_six{
+    background-color: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.container_six{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.center_textSix{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.key_textSix{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 1.6rem;
+}
+.key_paraSix{
+    color: #7b798a;
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 670px;
+}
